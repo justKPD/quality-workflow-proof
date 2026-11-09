@@ -1,0 +1,46 @@
+{
+  "source": "https://github.com/justKPD/reuse-durability-lab",
+  "checks": [
+    {
+      "title": "Human approval and rejection",
+      "result": "Actual Microsoft approval actions completed. Dataverse retained the corresponding Approved and Rejected outcomes.",
+      "limit": "Single signed-in reviewer; no production multi-user authority claim."
+    },
+    {
+      "title": "Changed revision",
+      "result": "An earlier approval did not authorize the revised case. The stale response was retained and the current revision remained Pending.",
+      "limit": "Independent synthetic case; no Bosch process data."
+    },
+    {
+      "title": "Concurrent delivery",
+      "result": "Four synchronized delivery submissions produced one decision and three AlreadyRecorded results in native flows.",
+      "limit": "Four-request conformance check, not large-load benchmarking."
+    },
+    {
+      "title": "Failed write and recovery",
+      "result": "The deliberate write failure rolled back the decision transaction. A later native delivery recovered successfully.",
+      "limit": "Controlled failure injection, not an observed employer incident."
+    },
+    {
+      "title": "Power BI agrees with records",
+      "result": "DAX queries in the loaded Desktop model matched complete record-ID sets and all selected fields from the saved Dataverse snapshot.",
+      "limit": "Saved import snapshot; no automatic live source refresh."
+    },
+    {
+      "title": "Exported Microsoft solution",
+      "result": "The populated solution ZIP contains actual workflow definitions, connection references and environment settings.",
+      "limit": "A second-environment import has not been tested."
+    }
+  ],
+  "power_bi": {
+    "counts": {
+      "Cases": 16,
+      "Requests": 15,
+      "Decisions": 12,
+      "Deliveries": 9
+    },
+    "verified_utc": "2026-11-09T10:11:28.563973+00:00",
+    "mode": "saved Dataverse snapshot"
+  },
+  "provenance": "Summaries from private native-run verification and Power BI reconciliation files. Tenant identifiers, accounts and connection bindings are not published."
+}

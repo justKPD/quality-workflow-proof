@@ -1,0 +1,15 @@
+{
+  "native_proof_loaded": true,
+  "rollout_checks": 9,
+  "stale_blocked": true,
+  "control_computed": true,
+  "failed_write_not_committed": true,
+  "retry_one_decision": true,
+  "report_reconciled": true,
+  "playback": true,
+  "custom_input": true,
+  "export_current_input": true,
+  "invalid_input": true,
+  "mobile_no_overflow": true,
+  "js_errors": []
+}

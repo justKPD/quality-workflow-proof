@@ -1,0 +1,7 @@
+node_modules/
+.vercel/
+private/
+__pycache__/
+results/*.png
+prepare_public_evidence.py
+browser_check.cjs
